@@ -1,0 +1,14 @@
+{
+  "_comment": "per-asset override 示例：全部键可省略（自动推导已覆盖常规情况）。键见 pipeline/common.py 的 config() 文档。关节参数按 slide/hinge 分类，放在顶层。",
+  "density": 700,
+  "damping": { "slide": 2.0, "hinge": 0.5 },
+  "frictionloss": { "slide": 1.0, "hinge": 0.05 },
+  "ctrlrange": { "slide": 60.0, "hinge": 12.0 },
+  "kp": { "slide": 600.0, "hinge": 40.0 },
+  "force_scale": 1.5,
+  "camera": {
+    "azimuth": 135,
+    "elevation": -18,
+    "distance": 2.9
+  }
+}

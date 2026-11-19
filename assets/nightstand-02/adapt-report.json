@@ -1,0 +1,100 @@
+{
+  "links": [
+    {
+      "name": "body",
+      "tris": 180000,
+      "mass": 120.0,
+      "com": [
+        0.0008,
+        0.0381,
+        0.0404
+      ],
+      "inertia": [
+        2.790032,
+        3.790621,
+        2.127803
+      ],
+      "stl": "meshes/body.stl"
+    },
+    {
+      "name": "drawer_top",
+      "tris": 17741,
+      "mass": 1.047,
+      "com": [
+        0.0013,
+        -0.2405,
+        0.0021
+      ],
+      "inertia": [
+        0.025051,
+        0.012608,
+        0.01474
+      ],
+      "stl": "meshes/drawer_top.stl"
+    },
+    {
+      "name": "door_bottom",
+      "tris": 26237,
+      "mass": 0.5,
+      "com": [
+        0.1725,
+        -0.0114,
+        -0.0689
+      ],
+      "inertia": [
+        0.00234,
+        0.006997,
+        0.00456
+      ],
+      "stl": "meshes/door_bottom.stl"
+    }
+  ],
+  "joints": [
+    {
+      "name": "drawer_top_joint",
+      "type": "prismatic",
+      "parent": "body",
+      "child": "drawer_top",
+      "origin": [
+        0.0006,
+        -0.01558,
+        0.1708
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "limits": [
+        0.0,
+        0.2392
+      ]
+    },
+    {
+      "name": "door_bottom_joint",
+      "type": "revolute",
+      "parent": "body",
+      "child": "door_bottom",
+      "origin": [
+        -0.17325,
+        -0.14314,
+        0.00656
+      ],
+      "axis": [
+        -0.00197,
+        0.00051,
+        -1.0
+      ],
+      "limits": [
+        0.0,
+        1.570796
+      ]
+    }
+  ],
+  "world": {
+    "rootLink": "body",
+    "jointYShift": -0.275,
+    "jointYShiftAuto": true,
+    "bodyPosZ": 0.275
+  }
+}

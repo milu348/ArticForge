@@ -1,0 +1,45 @@
+{
+  "_comment": "首批 5 件小批量（产品假设验证）：验收 = 每件零代码改动 + 度量人工分钟数与一次通过率。预算 ~205 积分（5×41：text-to-3d 13 + articulation 28）。试金牌：仅 side-table-01 放行；其余 4 件待试金验证后报价放行；cloud 步骤前确认 LUX3DAPI.json 凭据与余额。",
+  "assets": [
+    {
+      "name": "side-table-01",
+      "text_prompt": "现代简约风格木质边桌，方形桌面，一侧带一个抽屉，哑光橡木表面，四条方腿，产品摄影级细节，干净纯色背景",
+      "motion_prompt": "抽屉沿水平方向从桌体滑出",
+      "quote_id": null,
+      "version": "G1-Turbo",
+      "region": "cn"
+    },
+    {
+      "name": "wardrobe-01",
+      "text_prompt": "现代风格金属储物柜，两扇对开柜门带金属长把手，浅灰色，四条短腿，产品摄影级细节，干净纯色背景",
+      "motion_prompt": "两扇柜门绕各自侧边铰链向外打开",
+      "quote_id": null,
+      "version": "G1-Turbo",
+      "region": "cn"
+    },
+    {
+      "name": "nightstand-02",
+      "text_prompt": "现代简约风格木质床头柜，方形柜体，上部有一个带金属拉手的抽屉，下部为封闭柜体，四条短圆柱腿，哑光木纹表面，产品摄影级细节，干净纯色背景",
+      "motion_prompt": "抽屉沿水平方向滑出",
+      "quote_id": null,
+      "version": "G1-Turbo",
+      "region": "cn"
+    },
+    {
+      "name": "oven-mini-01",
+      "text_prompt": "复古薄荷绿迷你烤箱，正面下翻式箱门带圆形金属把手，顶部两个控制旋钮，产品摄影级细节，干净纯色背景",
+      "motion_prompt": "烤箱门绕水平铰链向下翻开",
+      "quote_id": null,
+      "version": "G1-Turbo",
+      "region": "cn"
+    },
+    {
+      "name": "toolbox-01",
+      "text_prompt": "红色钢制手提工具箱，顶部一层可拉出的滑轨托盘，黑色提手，金属锁扣，产品摄影级细节，干净纯色背景",
+      "motion_prompt": "顶部托盘沿水平方向滑出",
+      "quote_id": null,
+      "version": "G1-Turbo",
+      "region": "cn"
+    }
+  ]
+}

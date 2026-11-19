@@ -1,0 +1,8 @@
+{
+  "_comment": "仅覆盖渲染相机：azimuth=135 面向下翻门正面",
+  "camera": {
+    "azimuth": 135,
+    "elevation": -24,
+    "distance": 1.05
+  }
+}

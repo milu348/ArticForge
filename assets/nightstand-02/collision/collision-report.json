@@ -1,0 +1,76 @@
+{
+  "body": {
+    "sourceTris": 180000,
+    "hulls": [
+      {
+        "file": "collision/body_hull00.stl",
+        "tris": 380
+      },
+      {
+        "file": "collision/body_hull01.stl",
+        "tris": 438
+      },
+      {
+        "file": "collision/body_hull02.stl",
+        "tris": 388
+      },
+      {
+        "file": "collision/body_hull03.stl",
+        "tris": 410
+      },
+      {
+        "file": "collision/body_hull04.stl",
+        "tris": 368
+      },
+      {
+        "file": "collision/body_hull05.stl",
+        "tris": 134
+      },
+      {
+        "file": "collision/body_hull06.stl",
+        "tris": 72
+      },
+      {
+        "file": "collision/body_hull07.stl",
+        "tris": 222
+      },
+      {
+        "file": "collision/body_hull08.stl",
+        "tris": 404
+      },
+      {
+        "file": "collision/body_hull09.stl",
+        "tris": 392
+      },
+      {
+        "file": "collision/body_hull10.stl",
+        "tris": 184
+      },
+      {
+        "file": "collision/body_hull11.stl",
+        "tris": 220
+      }
+    ],
+    "seconds": 30.2
+  },
+  "drawer_top": {
+    "sourceTris": 17741,
+    "hulls": [
+      {
+        "file": "collision/drawer_top_hull00.stl",
+        "tris": 402
+      }
+    ],
+    "seconds": 0.1
+  },
+  "door_bottom": {
+    "sourceTris": 26237,
+    "hulls": [
+      {
+        "file": "collision/door_bottom_hull00.stl",
+        "tris": 1468
+      }
+    ],
+    "seconds": 0.1
+  }
+}

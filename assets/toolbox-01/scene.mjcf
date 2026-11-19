@@ -1,0 +1,30 @@
+
+<mujoco model="toolbox-01_demo">
+  <compiler angle="radian" meshdir="meshes"/>
+  <option timestep="0.002" gravity="0 0 -9.81" cone="elliptic"/>
+  <visual><global offwidth="1280" offheight="720"/></visual>
+  <default>
+    <geom solref="0.005 1" solimp="0.95 0.99 0.001"/>
+    <default class="vis"><geom contype="0" conaffinity="0" group="2" rgba="0.78 0.63 0.44 1"/></default>
+  </default>
+  <asset>
+['    <mesh name="base" file="base.stl"/>', '    <mesh name="tray" file="tray.stl"/>']
+
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.92 0.92 0.9" rgb2="0.8 0.8 0.78" width="300" height="300"/>
+    <material name="floor_mat" texture="grid" texuniform="true"/>
+  </asset>
+  <worldbody>
+    <light pos="1.2 -1.5 1.8" dir="-0.5 0.6 -0.6" diffuse="0.9 0.9 0.85" castshadow="false"/>
+    <light pos="-1.0 -1.2 1.4" dir="0.4 0.5 -0.6" diffuse="0.5 0.5 0.55" castshadow="false"/>
+    <geom name="floor" type="plane" size="2.5 2.5 0.05" material="floor_mat"/>
+    <body name="base" pos="0.000000 0.000000 -0.000000">
+      <geom class="vis" type="mesh" mesh="base" mass="79.5450"/>
+      <body name="tray" pos="0.002625 -0.098103 0.184933">
+        <joint name="tray_joint" type="slide" axis="0.000000 -1.000000 0.000000" range="-0.154353 0.007652" damping="2.0" frictionloss="1.0" armature="0.01"/>
+        <geom class="vis" type="mesh" mesh="tray" mass="0.5800"/>
+      </body>
+    </body>  </worldbody>
+  <actuator>
+    <position name="tray_joint_act" joint="tray_joint" kp="600.0"/>
+  </actuator>
+</mujoco>

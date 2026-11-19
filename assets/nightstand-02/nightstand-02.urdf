@@ -1,0 +1,52 @@
+<robot name="nightstand-02">
+  <link name="body">
+    <inertial>
+      <origin xyz="0.000805 0.038096 0.040410" />
+      <mass value="120.0000" />
+      <inertia ixx="2.790032" iyy="3.790621" izz="2.127803" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/body.stl" />
+      </geometry>
+    </visual>
+    <collision><geometry><mesh filename="collision/body_hull00.stl" /></geometry></collision><collision><geometry><mesh filename="collision/body_hull02.stl" /></geometry></collision><collision><geometry><mesh filename="collision/body_hull03.stl" /></geometry></collision><collision><geometry><mesh filename="collision/body_hull08.stl" /></geometry></collision><collision><geometry><mesh filename="collision/body_hull09.stl" /></geometry></collision><collision><geometry><mesh filename="collision/body_hull11.stl" /></geometry></collision></link>
+  <link name="drawer_top">
+    <inertial>
+      <origin xyz="0.001308 -0.240516 0.002092" />
+      <mass value="1.0466" />
+      <inertia ixx="0.025051" iyy="0.012608" izz="0.014740" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/drawer_top.stl" />
+      </geometry>
+    </visual>
+    <collision><geometry><mesh filename="collision/drawer_top_hull00.stl" /></geometry></collision></link>
+  <link name="door_bottom">
+    <inertial>
+      <origin xyz="0.172475 -0.011374 -0.068935" />
+      <mass value="0.5000" />
+      <inertia ixx="0.002340" iyy="0.006997" izz="0.004560" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/door_bottom.stl" />
+      </geometry>
+    </visual>
+    <collision><geometry><mesh filename="collision/door_bottom_hull00.stl" /></geometry></collision></link>
+  <joint name="drawer_top_joint" type="prismatic">
+    <parent link="body" />
+    <child link="drawer_top" />
+    <origin xyz="0.000605 -0.015579 0.170797" rpy="0 0 0" />
+    <axis xyz="0.000000 -1.000000 0.000000" />
+    <limit lower="0.000000" upper="0.239200" effort="50.0" velocity="1.0" />
+  </joint>
+  <joint name="door_bottom_joint" type="revolute">
+    <parent link="body" />
+    <child link="door_bottom" />
+    <origin xyz="-0.173249 -0.143140 0.006562" rpy="0 0 0" />
+    <axis xyz="-0.001974 0.000506 -0.999998" />
+    <limit lower="0.000000" upper="1.570796" effort="50.0" velocity="1.0" />
+  </joint>
+</robot>

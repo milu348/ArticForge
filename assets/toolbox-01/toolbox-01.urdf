@@ -1,0 +1,33 @@
+<robot name="toolbox-01">
+  <link name="base">
+    <inertial>
+      <origin xyz="0.000793 0.079144 0.165123" />
+      <mass value="79.5455" />
+      <inertia ixx="1.200288" iyy="2.583713" izz="2.020448" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/base.stl" />
+      </geometry>
+    </visual>
+    <collision><geometry><mesh filename="collision/base_hull00.stl" /></geometry></collision><collision><geometry><mesh filename="collision/base_hull04.stl" /></geometry></collision><collision><geometry><mesh filename="collision/base_hull05.stl" /></geometry></collision><collision><geometry><mesh filename="collision/base_hull06.stl" /></geometry></collision><collision><geometry><mesh filename="collision/base_hull09.stl" /></geometry></collision><collision><geometry><mesh filename="collision/base_hull11.stl" /></geometry></collision></link>
+  <link name="tray">
+    <inertial>
+      <origin xyz="-0.022320 -0.021756 0.005650" />
+      <mass value="0.5797" />
+      <inertia ixx="0.001599" iyy="0.011236" izz="0.012511" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/tray.stl" />
+      </geometry>
+    </visual>
+    <collision><geometry><mesh filename="collision/tray_hull00.stl" /></geometry></collision></link>
+  <joint name="tray_joint" type="prismatic">
+    <parent link="base" />
+    <child link="tray" />
+    <origin xyz="0.002625 -0.098103 0.184933" rpy="0 0 0" />
+    <axis xyz="0.000000 -1.000000 0.000000" />
+    <limit lower="-0.154353" upper="0.007652" effort="50.0" velocity="1.0" />
+  </joint>
+</robot>

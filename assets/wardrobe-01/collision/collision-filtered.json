@@ -1,0 +1,82 @@
+{
+  "body": {
+    "hulls": [
+      {
+        "file": "collision/body_hull01.stl",
+        "tris": 306
+      },
+      {
+        "file": "collision/body_hull02.stl",
+        "tris": 114
+      },
+      {
+        "file": "collision/body_hull05.stl",
+        "tris": 114
+      },
+      {
+        "file": "collision/body_hull07.stl",
+        "tris": 162
+      },
+      {
+        "file": "collision/body_hull08.stl",
+        "tris": 106
+      },
+      {
+        "file": "collision/body_hull09.stl",
+        "tris": 156
+      },
+      {
+        "file": "collision/body_hull10.stl",
+        "tris": 130
+      }
+    ]
+  },
+  "dropped": [
+    {
+      "file": "collision/body_hull00.stl",
+      "tris": 488
+    },
+    {
+      "file": "collision/body_hull03.stl",
+      "tris": 124
+    },
+    {
+      "file": "collision/body_hull04.stl",
+      "tris": 152
+    },
+    {
+      "file": "collision/body_hull06.stl",
+      "tris": 230
+    },
+    {
+      "file": "collision/body_hull11.stl",
+      "tris": 20
+    }
+  ],
+  "sweptVolumes": {
+    "door_left_joint": [
+      [
+        -0.41934786539763036,
+        -0.5452360193751602,
+        0.1064040653855417
+      ],
+      [
+        -0.0025171599521636757,
+        -0.15570186280578088,
+        1.1717086586995986
+      ]
+    ],
+    "door_right_joint": [
+      [
+        -0.005303425384521495,
+        -0.5549578432505825,
+        0.10641564923596758
+      ],
+      [
+        0.42373912414334036,
+        -0.15538320337338657,
+        1.1717296979815488
+      ]
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "links": [
+    {
+      "name": "body",
+      "tris": 156083,
+      "mass": 80.883,
+      "com": [
+        0.0002,
+        0.0425,
+        0.2006
+      ],
+      "inertia": [
+        1.707204,
+        2.573018,
+        3.586596
+      ],
+      "stl": "meshes/body.stl"
+    },
+    {
+      "name": "drawer",
+      "tris": 10799,
+      "mass": 1.407,
+      "com": [
+        0.0,
+        -0.4099,
+        0.0036
+      ],
+      "inertia": [
+        0.131885,
+        0.025118,
+        0.108879
+      ],
+      "stl": "meshes/drawer.stl"
+    }
+  ],
+  "joints": [
+    {
+      "name": "drawer_joint",
+      "type": "prismatic",
+      "parent": "body",
+      "child": "drawer",
+      "origin": [
+        0.0024,
+        -0.05123,
+        0.17311
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "limits": [
+        0.0,
+        0.332522
+      ]
+    }
+  ],
+  "world": {
+    "rootLink": "body",
+    "jointYShift": -0.275,
+    "jointYShiftAuto": true,
+    "bodyPosZ": 0.275
+  }
+}

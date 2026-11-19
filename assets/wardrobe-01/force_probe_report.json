@@ -1,0 +1,27 @@
+{
+  "pass": true,
+  "joints": {
+    "door_left_joint": {
+      "type": "revolute",
+      "unit": "N.m",
+      "onsetCmd": 0.09,
+      "plateauCmd": null,
+      "target": 1.5708,
+      "travel": 1.57731,
+      "travelFrac": 1.004,
+      "sign": 1.0,
+      "pass": true
+    },
+    "door_right_joint": {
+      "type": "revolute",
+      "unit": "N.m",
+      "onsetCmd": 0.09,
+      "plateauCmd": null,
+      "target": 1.5708,
+      "travel": 1.5771,
+      "travelFrac": 1.004,
+      "sign": 1.0,
+      "pass": true
+    }
+  }
+}

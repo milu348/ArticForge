@@ -1,0 +1,27 @@
+{
+  "pass": true,
+  "joints": {
+    "drawer_top_joint": {
+      "type": "prismatic",
+      "unit": "N",
+      "onsetCmd": 1.2,
+      "plateauCmd": null,
+      "target": 0.2392,
+      "travel": 0.24034,
+      "travelFrac": 1.005,
+      "sign": 1.0,
+      "pass": true
+    },
+    "door_bottom_joint": {
+      "type": "revolute",
+      "unit": "N.m",
+      "onsetCmd": 0.06,
+      "plateauCmd": null,
+      "target": 1.5708,
+      "travel": 1.58079,
+      "travelFrac": 1.006,
+      "sign": 1.0,
+      "pass": true
+    }
+  }
+}

@@ -1,0 +1,35 @@
+
+<mujoco model="nightstand-02_demo">
+  <compiler angle="radian" meshdir="meshes"/>
+  <option timestep="0.002" gravity="0 0 -9.81" cone="elliptic"/>
+  <visual><global offwidth="1280" offheight="720"/></visual>
+  <default>
+    <geom solref="0.005 1" solimp="0.95 0.99 0.001"/>
+    <default class="vis"><geom contype="0" conaffinity="0" group="2" rgba="0.78 0.63 0.44 1"/></default>
+  </default>
+  <asset>
+['    <mesh name="body" file="body.stl"/>', '    <mesh name="drawer_top" file="drawer_top.stl"/>', '    <mesh name="door_bottom" file="door_bottom.stl"/>']
+
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.92 0.92 0.9" rgb2="0.8 0.8 0.78" width="300" height="300"/>
+    <material name="floor_mat" texture="grid" texuniform="true"/>
+  </asset>
+  <worldbody>
+    <light pos="1.2 -1.5 1.8" dir="-0.5 0.6 -0.6" diffuse="0.9 0.9 0.85" castshadow="false"/>
+    <light pos="-1.0 -1.2 1.4" dir="0.4 0.5 -0.6" diffuse="0.5 0.5 0.55" castshadow="false"/>
+    <geom name="floor" type="plane" size="2.5 2.5 0.05" material="floor_mat"/>
+    <body name="body" pos="0.000000 0.000000 0.275000">
+      <geom class="vis" type="mesh" mesh="body" mass="120.0000"/>
+      <body name="drawer_top" pos="0.000605 -0.015579 0.170797">
+        <joint name="drawer_top_joint" type="slide" axis="0.000000 -1.000000 0.000000" range="0.000000 0.239200" damping="2.0" frictionloss="1.0" armature="0.01"/>
+        <geom class="vis" type="mesh" mesh="drawer_top" mass="1.0470"/>
+      </body>
+      <body name="door_bottom" pos="-0.173249 -0.143140 0.006562">
+        <joint name="door_bottom_joint" type="hinge" axis="-0.001974 0.000506 -0.999998" range="0.000000 1.570796" damping="0.5" frictionloss="0.05" armature="0.01"/>
+        <geom class="vis" type="mesh" mesh="door_bottom" mass="0.5000"/>
+      </body>
+    </body>  </worldbody>
+  <actuator>
+    <position name="drawer_top_joint_act" joint="drawer_top_joint" kp="600.0"/>
+    <position name="door_bottom_joint_act" joint="door_bottom_joint" kp="40.0"/>
+  </actuator>
+</mujoco>

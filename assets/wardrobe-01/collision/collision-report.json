@@ -1,0 +1,76 @@
+{
+  "body": {
+    "sourceTris": 180000,
+    "hulls": [
+      {
+        "file": "collision/body_hull00.stl",
+        "tris": 488
+      },
+      {
+        "file": "collision/body_hull01.stl",
+        "tris": 306
+      },
+      {
+        "file": "collision/body_hull02.stl",
+        "tris": 114
+      },
+      {
+        "file": "collision/body_hull03.stl",
+        "tris": 124
+      },
+      {
+        "file": "collision/body_hull04.stl",
+        "tris": 152
+      },
+      {
+        "file": "collision/body_hull05.stl",
+        "tris": 114
+      },
+      {
+        "file": "collision/body_hull06.stl",
+        "tris": 230
+      },
+      {
+        "file": "collision/body_hull07.stl",
+        "tris": 162
+      },
+      {
+        "file": "collision/body_hull08.stl",
+        "tris": 106
+      },
+      {
+        "file": "collision/body_hull09.stl",
+        "tris": 156
+      },
+      {
+        "file": "collision/body_hull10.stl",
+        "tris": 130
+      },
+      {
+        "file": "collision/body_hull11.stl",
+        "tris": 20
+      }
+    ],
+    "seconds": 26.2
+  },
+  "door_left": {
+    "sourceTris": 26210,
+    "hulls": [
+      {
+        "file": "collision/door_left_hull00.stl",
+        "tris": 146
+      }
+    ],
+    "seconds": 0.1
+  },
+  "door_right": {
+    "sourceTris": 28558,
+    "hulls": [
+      {
+        "file": "collision/door_right_hull00.stl",
+        "tris": 206
+      }
+    ],
+    "seconds": 0.1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "links": [
+    {
+      "name": "base",
+      "tris": 156652,
+      "mass": 79.545,
+      "com": [
+        0.0008,
+        0.0791,
+        0.1651
+      ],
+      "inertia": [
+        1.200288,
+        2.583713,
+        2.020448
+      ],
+      "stl": "meshes/base.stl"
+    },
+    {
+      "name": "tray",
+      "tris": 154940,
+      "mass": 0.58,
+      "com": [
+        -0.0223,
+        -0.0218,
+        0.0056
+      ],
+      "inertia": [
+        0.001599,
+        0.011236,
+        0.012511
+      ],
+      "stl": "meshes/tray.stl"
+    }
+  ],
+  "joints": [
+    {
+      "name": "tray_joint",
+      "type": "prismatic",
+      "parent": "base",
+      "child": "tray",
+      "origin": [
+        0.00262,
+        -0.0981,
+        0.18493
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "limits": [
+        -0.154353,
+        0.007652
+      ]
+    }
+  ],
+  "world": {
+    "rootLink": "base",
+    "jointYShift": 0.0,
+    "jointYShiftAuto": true,
+    "bodyPosZ": -0.0
+  }
+}

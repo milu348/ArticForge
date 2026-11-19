@@ -1,0 +1,33 @@
+<robot name="oven-mini-01">
+  <link name="base">
+    <inertial>
+      <origin xyz="-0.000637 0.029860 0.008149" />
+      <mass value="85.2892" />
+      <inertia ixx="1.342645" iyy="2.183978" izz="1.575028" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/base.stl" />
+      </geometry>
+    </visual>
+    <collision><geometry><mesh filename="collision/base_hull00.stl" /></geometry></collision><collision><geometry><mesh filename="collision/base_hull07.stl" /></geometry></collision><collision><geometry><mesh filename="collision/base_hull08.stl" /></geometry></collision><collision><geometry><mesh filename="collision/base_hull11.stl" /></geometry></collision></link>
+  <link name="door">
+    <inertial>
+      <origin xyz="-0.003831 0.120765 0.110844" />
+      <mass value="7.3186" />
+      <inertia ixx="0.042558" iyy="0.064632" izz="0.079711" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/door.stl" />
+      </geometry>
+    </visual>
+    <collision><geometry><mesh filename="collision/door_hull00.stl" /></geometry></collision></link>
+  <joint name="door_joint" type="revolute">
+    <parent link="base" />
+    <child link="door" />
+    <origin xyz="0.001510 -0.117745 -0.144612" rpy="0 0 0" />
+    <axis xyz="-0.999999 -0.001129 -0.000180" />
+    <limit lower="-1.570796" upper="0.000000" effort="50.0" velocity="1.0" />
+  </joint>
+</robot>

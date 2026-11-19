@@ -1,0 +1,100 @@
+{
+  "links": [
+    {
+      "name": "body",
+      "tris": 180000,
+      "mass": 120.0,
+      "com": [
+        -0.0003,
+        0.0425,
+        0.0281
+      ],
+      "inertia": [
+        13.058732,
+        19.719554,
+        7.832366
+      ],
+      "stl": "meshes/body.stl"
+    },
+    {
+      "name": "door_left",
+      "tris": 26210,
+      "mass": 0.5,
+      "com": [
+        0.2548,
+        -0.0186,
+        0.3087
+      ],
+      "inertia": [
+        0.056541,
+        0.048495,
+        0.008199
+      ],
+      "stl": "meshes/door_left.stl"
+    },
+    {
+      "name": "door_right",
+      "tris": 28558,
+      "mass": 0.5,
+      "com": [
+        -0.2719,
+        -0.0212,
+        0.3202
+      ],
+      "inertia": [
+        0.06326,
+        0.0574,
+        0.005946
+      ],
+      "stl": "meshes/door_right.stl"
+    }
+  ],
+  "joints": [
+    {
+      "name": "door_left_joint",
+      "type": "revolute",
+      "parent": "body",
+      "child": "door_left",
+      "origin": [
+        -0.37684,
+        -0.17091,
+        0.03785
+      ],
+      "axis": [
+        -7e-05,
+        8e-05,
+        -1.0
+      ],
+      "limits": [
+        0.0,
+        1.570796
+      ]
+    },
+    {
+      "name": "door_right_joint",
+      "type": "revolute",
+      "parent": "body",
+      "child": "door_right",
+      "origin": [
+        0.37987,
+        -0.16976,
+        0.03999
+      ],
+      "axis": [
+        8e-05,
+        0.00011,
+        1.0
+      ],
+      "limits": [
+        0.0,
+        1.570796
+      ]
+    }
+  ],
+  "world": {
+    "rootLink": "body",
+    "jointYShift": -0.6,
+    "jointYShiftAuto": true,
+    "bodyPosZ": 0.6
+  }
+}

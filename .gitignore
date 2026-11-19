@@ -1,0 +1,35 @@
+# ---- 凭据 / 隐私（切勿提交） ----
+LUX3DAPI.json
+.env
+.env.*
+*.key
+*.pem
+
+# ---- 本地 Python 环境（体积大、平台相关） ----
+.venv/
+.venv-maniskill/
+.lux3d-env/
+
+# ---- 官方仓库参考副本（自带 .git，运行时不使用） ----
+Aholo-Lux3D/
+
+# ---- 本地运行产物（含账户引用、报价记录、任务日志，全部可再生） ----
+output/
+
+# ---- Python 缓存 ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ---- 调试 / 临时文件 ----
+*.log
+*.tmp
+output/figs-debug/
+output/figs-backup/
+
+# ---- 编辑器 / 系统 ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

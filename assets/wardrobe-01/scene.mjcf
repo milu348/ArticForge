@@ -1,0 +1,35 @@
+
+<mujoco model="wardrobe-01_demo">
+  <compiler angle="radian" meshdir="meshes"/>
+  <option timestep="0.002" gravity="0 0 -9.81" cone="elliptic"/>
+  <visual><global offwidth="1280" offheight="720"/></visual>
+  <default>
+    <geom solref="0.005 1" solimp="0.95 0.99 0.001"/>
+    <default class="vis"><geom contype="0" conaffinity="0" group="2" rgba="0.78 0.63 0.44 1"/></default>
+  </default>
+  <asset>
+['    <mesh name="body" file="body.stl"/>', '    <mesh name="door_left" file="door_left.stl"/>', '    <mesh name="door_right" file="door_right.stl"/>']
+
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.92 0.92 0.9" rgb2="0.8 0.8 0.78" width="300" height="300"/>
+    <material name="floor_mat" texture="grid" texuniform="true"/>
+  </asset>
+  <worldbody>
+    <light pos="1.2 -1.5 1.8" dir="-0.5 0.6 -0.6" diffuse="0.9 0.9 0.85" castshadow="false"/>
+    <light pos="-1.0 -1.2 1.4" dir="0.4 0.5 -0.6" diffuse="0.5 0.5 0.55" castshadow="false"/>
+    <geom name="floor" type="plane" size="2.5 2.5 0.05" material="floor_mat"/>
+    <body name="body" pos="0.000000 0.000000 0.600000">
+      <geom class="vis" type="mesh" mesh="body" mass="120.0000"/>
+      <body name="door_left" pos="-0.376839 -0.170911 0.037848">
+        <joint name="door_left_joint" type="hinge" axis="-0.000073 0.000079 -1.000000" range="0.000000 1.570796" damping="0.5" frictionloss="0.05" armature="0.01"/>
+        <geom class="vis" type="mesh" mesh="door_left" mass="0.5000"/>
+      </body>
+      <body name="door_right" pos="0.379874 -0.169764 0.039995">
+        <joint name="door_right_joint" type="hinge" axis="0.000079 0.000110 1.000000" range="0.000000 1.570796" damping="0.5" frictionloss="0.05" armature="0.01"/>
+        <geom class="vis" type="mesh" mesh="door_right" mass="0.5000"/>
+      </body>
+    </body>  </worldbody>
+  <actuator>
+    <position name="door_left_joint_act" joint="door_left_joint" kp="40.0"/>
+    <position name="door_right_joint_act" joint="door_right_joint" kp="40.0"/>
+  </actuator>
+</mujoco>

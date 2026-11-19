@@ -1,0 +1,66 @@
+{
+  "base": {
+    "sourceTris": 149806,
+    "hulls": [
+      {
+        "file": "collision/base_hull00.stl",
+        "tris": 1758
+      },
+      {
+        "file": "collision/base_hull01.stl",
+        "tris": 258
+      },
+      {
+        "file": "collision/base_hull02.stl",
+        "tris": 84
+      },
+      {
+        "file": "collision/base_hull03.stl",
+        "tris": 844
+      },
+      {
+        "file": "collision/base_hull04.stl",
+        "tris": 1050
+      },
+      {
+        "file": "collision/base_hull05.stl",
+        "tris": 428
+      },
+      {
+        "file": "collision/base_hull06.stl",
+        "tris": 392
+      },
+      {
+        "file": "collision/base_hull07.stl",
+        "tris": 676
+      },
+      {
+        "file": "collision/base_hull08.stl",
+        "tris": 502
+      },
+      {
+        "file": "collision/base_hull09.stl",
+        "tris": 536
+      },
+      {
+        "file": "collision/base_hull10.stl",
+        "tris": 292
+      },
+      {
+        "file": "collision/base_hull11.stl",
+        "tris": 168
+      }
+    ],
+    "seconds": 54.4
+  },
+  "door": {
+    "sourceTris": 142086,
+    "hulls": [
+      {
+        "file": "collision/door_hull00.stl",
+        "tris": 636
+      }
+    ],
+    "seconds": 0.6
+  }
+}

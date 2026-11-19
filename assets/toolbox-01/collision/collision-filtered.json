@@ -1,0 +1,70 @@
+{
+  "base": {
+    "hulls": [
+      {
+        "file": "collision/base_hull00.stl",
+        "tris": 412
+      },
+      {
+        "file": "collision/base_hull04.stl",
+        "tris": 340
+      },
+      {
+        "file": "collision/base_hull05.stl",
+        "tris": 1140
+      },
+      {
+        "file": "collision/base_hull06.stl",
+        "tris": 148
+      },
+      {
+        "file": "collision/base_hull09.stl",
+        "tris": 774
+      },
+      {
+        "file": "collision/base_hull11.stl",
+        "tris": 284
+      }
+    ]
+  },
+  "dropped": [
+    {
+      "file": "collision/base_hull01.stl",
+      "tris": 182
+    },
+    {
+      "file": "collision/base_hull02.stl",
+      "tris": 794
+    },
+    {
+      "file": "collision/base_hull03.stl",
+      "tris": 180
+    },
+    {
+      "file": "collision/base_hull07.stl",
+      "tris": 132
+    },
+    {
+      "file": "collision/base_hull08.stl",
+      "tris": 144
+    },
+    {
+      "file": "collision/base_hull10.stl",
+      "tris": 186
+    }
+  ],
+  "sweptVolumes": {
+    "tray_joint": [
+      [
+        -0.2327891874847437,
+        -0.1981841972618103,
+        0.12860457424166644
+      ],
+      [
+        0.2385458007194822,
+        0.011478872165203099,
+        0.2567071187466921
+      ]
+    ]
+  }
+}

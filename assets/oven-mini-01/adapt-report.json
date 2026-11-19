@@ -1,0 +1,64 @@
+{
+  "links": [
+    {
+      "name": "base",
+      "tris": 149806,
+      "mass": 85.289,
+      "com": [
+        -0.0006,
+        0.0299,
+        0.0081
+      ],
+      "inertia": [
+        1.342645,
+        2.183978,
+        1.575028
+      ],
+      "stl": "meshes/base.stl"
+    },
+    {
+      "name": "door",
+      "tris": 142086,
+      "mass": 7.319,
+      "com": [
+        -0.0038,
+        0.1208,
+        0.1108
+      ],
+      "inertia": [
+        0.042558,
+        0.064632,
+        0.079711
+      ],
+      "stl": "meshes/door.stl"
+    }
+  ],
+  "joints": [
+    {
+      "name": "door_joint",
+      "type": "revolute",
+      "parent": "base",
+      "child": "door",
+      "origin": [
+        0.00151,
+        -0.11774,
+        -0.14461
+      ],
+      "axis": [
+        -1.0,
+        -0.00113,
+        -0.00018
+      ],
+      "limits": [
+        -1.570796,
+        0.0
+      ]
+    }
+  ],
+  "world": {
+    "rootLink": "base",
+    "jointYShift": -0.195301,
+    "jointYShiftAuto": true,
+    "bodyPosZ": 0.195301
+  }
+}

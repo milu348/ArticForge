@@ -1,0 +1,33 @@
+<robot name="side-table-01">
+  <link name="body">
+    <inertial>
+      <origin xyz="0.000188 0.042472 0.200554" />
+      <mass value="80.8832" />
+      <inertia ixx="1.707204" iyy="2.573018" izz="3.586596" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/body.stl" />
+      </geometry>
+    </visual>
+    <collision><geometry><mesh filename="collision/body_hull01.stl" /></geometry></collision><collision><geometry><mesh filename="collision/body_hull03.stl" /></geometry></collision><collision><geometry><mesh filename="collision/body_hull04.stl" /></geometry></collision><collision><geometry><mesh filename="collision/body_hull06.stl" /></geometry></collision></link>
+  <link name="drawer">
+    <inertial>
+      <origin xyz="0.000017 -0.409943 0.003628" />
+      <mass value="1.4074" />
+      <inertia ixx="0.131885" iyy="0.025118" izz="0.108879" ixy="0" ixz="0" iyz="0" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/drawer.stl" />
+      </geometry>
+    </visual>
+    <collision><geometry><mesh filename="collision/drawer_hull00.stl" /></geometry></collision></link>
+  <joint name="drawer_joint" type="prismatic">
+    <parent link="body" />
+    <child link="drawer" />
+    <origin xyz="0.002404 -0.051230 0.173107" rpy="0 0 0" />
+    <axis xyz="0.000000 -1.000000 0.000000" />
+    <limit lower="0.000000" upper="0.332522" effort="50.0" velocity="1.0" />
+  </joint>
+</robot>

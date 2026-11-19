@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "joints": {
+    "tray_joint": {
+      "type": "prismatic",
+      "unit": "N",
+      "onsetCmd": -1.2,
+      "plateauCmd": null,
+      "target": -0.15435,
+      "travel": -0.15639,
+      "travelFrac": 1.013,
+      "sign": -1.0,
+      "pass": true
+    }
+  }
+}
